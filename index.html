@@ -4,11 +4,49 @@
     <meta charset="UTF-8">
     <title>Google Homepage</title>
 
-    <link rel="stylesheet" href"style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script>
+            function checkInput() {
+                newVal = document.getElementById('search-box').value;
+
+                if(newVal == "") {
+                    document.getElementById('clear-icon').style.visibility = "hidden";
+                }
+                else {
+                    document.getElementById('clear-icon').style.visibility = "visible";
+                }
+
+            }
+
+            function clearInput() {
+                document.getElementById('search-box').value = "";
+                document.getElementById('clear-icon').style.visibility = "hidden";
+            }
+    </script>
 </head>
 <body>
-    <div>
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" width="272" height="92">
+    <div id="header">
+        <ul>
+            <li class="header-left"><a href="">About</a></li>
+            <li class="header-left"><a href="">Store</a></li>
+            <li class="header-right"><a href="">Account</a></li>
+            <li class="header-right"><a href=""><span class="material-icons">apps</span></a></li>
+            <li class="header-right"><a href="">Images</a></li>
+            <li class="header-right"><a href="">Gmail</a></li>
+        </ul>
+    </div>
+    </span>
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" width="272" height="92">
+    <div id="search-container" class="search">
+        <span id="search-icon" class="material-icons">search</span>
+        <input id="search-box" type="text" autocomplete="off" autofocus onkeyup="checkInput()">
+        <span id="clear-icon" class="material-icons" onclick="clearInput()">clear</span>
+    </div>
+    <div id="buttons">
+        <button type="button">Google Search</button>
+        <button type="button">I'm Feeling Lucky</button>
     </div>
 </body>
 </html>
