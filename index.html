@@ -27,17 +27,20 @@
     </script>
 </head>
 <body>
-    <div id="header">
-        <ul>
-            <li class="header-left"><a href="">About</a></li>
-            <li class="header-left"><a href="">Store</a></li>
-            <li class="header-right"><a href="">Account</a></li>
-            <li class="header-right"><a href=""><span class="material-icons">apps</span></a></li>
-            <li class="header-right"><a href="">Images</a></li>
-            <li class="header-right"><a href="">Gmail</a></li>
-        </ul>
-    </div>
-    </span>
+    <nav>
+        <a class="link">About</a>
+        <a class="link">Store</a>
+        <a id="mail" class="link">Gmail</a>
+        <a class="link">Images</a>
+        <a id="apps" class="material-icons">apps</a>
+        <svg height="50" width="50">
+            <g>
+                <circle cx="25" cy="25" r="21" fill="#3174f1"/>
+                <circle cx="25" cy="25" r="18" stroke="white" stroke-width="2" fill="#f4511e"/>
+                <text x="19" y="32" font-family="sans-serif" font-size="20px" font-style="bold" fill="white">L</text>
+            </g>
+        </svg>
+    </nav>
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" width="272" height="92">
     <div id="search-container" class="search">
         <span id="search-icon" class="material-icons">search</span>
@@ -48,5 +51,14 @@
         <button type="button">Google Search</button>
         <button type="button">I'm Feeling Lucky</button>
     </div>
+    <footer>
+        <a class="link footer">Advertising</a>
+        <a class="link footer">Business</a>
+        <a class="link footer">How Search works</a>
+        <a id="carbon" class="link footer">Carbon neutral since 2007</a>
+        <a id="privacy" class="link footer">Privacy</a>
+        <a class="link footer">Terms</a>
+        <a class="link footer">Settings</a>
+    </footer>
 </body>
 </html>

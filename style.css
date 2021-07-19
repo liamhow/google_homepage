@@ -1,37 +1,63 @@
 body {
-    font-family: arial;
-}
-
-#header {
-    background-color: red;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.header-left {
-    float:left;
-}
-
-.header-right {
-    float: right;
-}
-
-li a {
-    display: block;
-    color: rgb(0, 0, 0, 0.75);
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
+    font-family: Arial, sans-serif;
     font-size: 14px;
+    color: rgb(0, 0, 0, 0.75);
 }
 
-li a:Hover {
+nav {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    background-color: #f2f2f2;
+    width: 99%;
+    height: 50px;
+}
+
+.footer {
+    color: #70757a;
+}
+
+#mail, #carbon, #privacy {
+    margin-left: auto;
+}
+
+a {
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.link:hover {
     text-decoration: underline;
+}
+
+svg {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#apps {
+    border: 8px solid white;
+    border-radius: 50%;
+}
+
+#apps:hover {
+    border-color: #f0f0f0;
+    background-color: #f0f0f0;
+}
+
+.account {
+    border-radius: 50%;
+    background-color: blue;
+    height: 30px;
+    width: 30px;
+    border: 2px solid red;
 }
 
 img {
@@ -55,8 +81,6 @@ button {
     cursor: pointer;
     background-color: rgb(0, 0, 0, 0.022);
     border-radius: 3px;
-    color: rgb(0, 0, 0, 0.75);
-    font-size: 14px;
     margin: 0 10px;
 }
 
